@@ -10,9 +10,7 @@ import vkapi, os, time, math
 for i in tqdm(range(5)):
       time.sleep(1)
 
-y = yadisk.YaDisk(token="AQAAAAA6dFGUAADLW5eadxA57knHvF5C86l7aAw")
-print(y.check_token())
-print(y.get_disk_info())
+
 
 
 class VK:
