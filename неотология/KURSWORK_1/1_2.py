@@ -1,18 +1,11 @@
 import requests
-from pprint import pprint
-import time
-from tqdm import tqdm
 import yadisk
 import json
-import os
-import sys
-import urllib
-import math
-from datetime import datetime
 
 
 
-numbers_photo=0
+
+
 
 class VK:
 
@@ -43,9 +36,7 @@ class VK:
         for item in data.items():
             with open('photo.json', 'w') as outfile:
                 json.dump(data, outfile, sort_keys=True, indent=4)
-            #            print(item)
         my_list = r.json()['response']['items']
- #       result_list = []
         for i in dict_data:
             temp_dict = {}
             with open('photo.json', 'w', encoding='utf-8') as file:
@@ -63,7 +54,7 @@ class YaDisk:
         self.token = token
 
     def post_photo(self):
-        y = yadisk.YaDisk(token="AQAAAAA6dFGUAADLW5eadxA57knHvF5C86l7aAw")
+        y = yadisk.YaDisk(token="vvv")
         url = 'https://cloud-api.yandex.net/v1/disk/resources/upload'
         response = requests.post(url, params='result_list')
         print(response.json())
@@ -71,6 +62,6 @@ class YaDisk:
 if __name__ == '__main__':
     vk = VK('a67f00c673c3d4b12800dd0ba29579ec56d804f3c5f3bbcef5328d4b3981fa5987b951cf2c8d8b24b9abd', 5.131)
     vk.get_photo()
-    YaDisk = YaDisk('AQAAAAA6dFGUAADLW5eadxA57knHvF5C86l7aAw')
+    YaDisk = YaDisk('vvv')
     YaDisk.post_photo()
 
