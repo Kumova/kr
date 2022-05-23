@@ -1,0 +1,80 @@
+{
+    "response": {
+        "count": 5,
+        "items": [
+            {
+                "album_id": -6,
+                "can_comment": 1,
+                "comments": {
+                    "count": 0
+                },
+                "date": 1593979270,
+                "has_tags": false,
+                "id": 457239023,
+                "likes": {
+                    "count": 12,
+                    "user_likes": 1
+                },
+                "owner_id": 552934290,
+                "post_id": 9,
+                "reposts": {
+                    "count": 0
+                },
+                "sizes": [
+                    {
+                        "height": 130,
+                        "type": "m",
+                        "url": "https://sun9-north.userapi.com/sun9-77/s/v1/if2/drJjHDhD5TsCMU1OWE8_s-kltZVE1Bs_y15YPPA0ureSY3ht4XIH_v_ADtpRi9a9wbDBKWyv4v08JsGtVGHKHPx1.jpg?size=130x130&quality=96&type=album",
+                        "width": 130
+                    },
+                    {
+                        "height": 130,
+                        "type": "o",
+                        "url": "https://sun9-north.userapi.com/sun9-77/s/v1/if2/drJjHDhD5TsCMU1OWE8_s-kltZVE1Bs_y15YPPA0ureSY3ht4XIH_v_ADtpRi9a9wbDBKWyv4v08JsGtVGHKHPx1.jpg?size=130x130&quality=96&type=album",
+                        "width": 130
+                    },
+                    {
+                        "height": 200,
+                        "type": "p",
+                        "url": "https://sun9-north.userapi.com/sun9-77/s/v1/if2/ty3A_sFFToISX87ze9Evn4GeFStsgScqtzXU60rnwl6rN6db2zQaGCCqjV-donJLXvXoRHOJX7tuZVDRjoVqt95n.jpg?size=200x200&quality=96&type=album",
+                        "width": 200
+                    },
+                    {
+                        "height": 320,
+                        "type": "q",
+                        "url": "https://sun9-north.userapi.com/sun9-77/s/v1/if2/G29KDNTbbFwlD9yMEqWTnd7iVY6Wz9iEBetzAgGIHSFbY1smQe_j4CYnA-u9SjNmpeW06NndI8HJIq4bfdSWlocE.jpg?size=320x320&quality=96&type=album",
+                        "width": 320
+                    },
+                    {
+                        "height": 510,
+                        "type": "r",
+                        "url": "https://sun9-north.userapi.com/sun9-77/s/v1/if2/r7YVc1374GYb_C3a727dCy_G-s4VVQKD1_SeRAg_MzB_Kd22PGUpoH2IuKk8YMotthuXuy63eKRbKUwXiSYQiilp.jpg?size=510x510&quality=96&type=album",
+                        "width": 510
+                    },
+                    {
+                        "height": 75,
+                        "type": "s",
+                        "url": "https://sun9-north.userapi.com/sun9-77/s/v1/if2/j3h5OEhCt-5Lj_JVvOeOai_b6LnSmSQZ7ma7Idlqtf12nIw46Jkf6vKI6si9tdGMykomBj4B2vMU6IVYlqNI89mG.jpg?size=75x75&quality=96&type=album",
+                        "width": 75
+                    },
+                    {
+                        "height": 604,
+                        "type": "x",
+                        "url": "https://sun9-north.userapi.com/sun9-77/s/v1/if2/Yo_L9pxKJbrB4nPKkWKt--Mecmnw3XPsSA6imqOV8Y19q6UWF9U9Wpfjqm_vqzhaA2_HsdKv0eLFWTQEsLI_3_7P.jpg?size=604x604&quality=96&type=album",
+                        "width": 604
+                    },
+                    {
+                        "height": 800,
+                        "type": "y",
+                        "url": "https://sun9-north.userapi.com/sun9-77/s/v1/if2/IpnrenMdbfRH9qKa0v4pBUoA8IOQ-3KuRZ_W6_TCERqUnOunySei8H4Z6sc5auuNlRwdn9Dtls_2R8AF_nmoZzxV.jpg?size=800x800&quality=96&type=album",
+                        "width": 800
+                    }
+                ],
+                "tags": {
+                    "count": 0
+                },
+                "text": ""
+            }
+        ]
+    }
+}

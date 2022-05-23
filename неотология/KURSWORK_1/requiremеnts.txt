@@ -1,0 +1,15 @@
+certifi	2021.10.8	2022.5.18.1
+charset-normalizer	2.0.12	2.0.12
+colorama	0.4.4	0.4.4
+idna	3.3	3.3
+pip	21.1.1	22.1.1
+requests	2.27.1	2.27.1
+setuptools	56.0.0	62.3.2
+tqdm	4.64.0	4.64.0
+urllib3	1.26.9	1.26.9
+yadisk	1.2.15	1.2.15
+
+
+
+https://disk.yandex.ru/i/KcZglsBbHKNzhQ
+
