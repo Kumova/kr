@@ -1,11 +1,6 @@
 import requests
-import yadisk
+import yadisk_api
 import json
-
-
-
-
-
 
 class VK:
 
@@ -13,12 +8,10 @@ class VK:
         self.token = token
         self.v = v
 
-
     def get_photo(self):
 
         token = 'a67f00c673c3d4b12800dd0ba29579ec56d804f3c5f3bbcef5328d4b3981fa5987b951cf2c8d8b24b9abd'
         url = 'https://api.vk.com/method/photos.get'
-
         params = {
                 'owner_id':   552934290,
                 'access_token': token,
@@ -29,39 +22,42 @@ class VK:
                 'photo_sizes': 1,
                 'v': 5.131
         }
-
         r = requests.get(url, params=params)
-        data=r.json()
-        dict_data=[]
-        for item in data.items():
+        data=r.json()['response']['items']
+        dict_1=[]
+        for i in dict_1:
+            dict = {}
             with open('photo.json', 'w') as outfile:
-                json.dump(data, outfile, sort_keys=True, indent=4)
-        my_list = r.json()['response']['items']
-        for i in dict_data:
-            temp_dict = {}
-            with open('photo.json', 'w', encoding='utf-8') as file:
-                temp_dict['name_file'] = i['likes']['count']
-                temp_dict['size'] = i['size']
-                dict_data.append(temp_dict)
-        dict_data = sorted(dict_data, key=lambda temp_dict: temp_dict['type'])
-        with open('new.json', "w", encoding='utf-8') as fh:
-            for dict_ in dict_data:
-                content = '\n'.join(dict_['name_file'])
-                fh.write(f"{dict_['name_file']}\n{dict_['likes']['count']['type']}\n{content}\n")
+                dict['name'] = i['likes']['count']
+                dict['sizes'] = i['sizes']
+                dict_1.append(dict)
+                dict_1 = sorted(dict_1, key=lambda dict_: dict['type'])
+                json.dump(dict_1, outfile, sort_keys=True, indent=4)
+                content = '\n'.join(dict['name'])
+                outfile.write(f"{dict['name']}\n{dict['likes']['count']['sizes']}\n{content}\n")
 
 class YaDisk:
     def __init__(self, token):
         self.token = token
 
-    def post_photo(self):
-        y = yadisk.YaDisk(token="vvv")
+    def post_photo(self, photos):
+        token='AAw'
+        headers={'Autorization': self.token}
+        for dict_1 in enumerate(photos):
+            params = {
+                "path": f"C:\KURSWORK_1{dict_1['name']}",
+                "overwrite": True,
+                'url': dict_1['url']
+            }
+
         url = 'https://cloud-api.yandex.net/v1/disk/resources/upload'
-        response = requests.post(url, params='result_list')
+        response = requests.post(url, headers=headers, params=params)
         print(response.json())
 
 if __name__ == '__main__':
     vk = VK('a67f00c673c3d4b12800dd0ba29579ec56d804f3c5f3bbcef5328d4b3981fa5987b951cf2c8d8b24b9abd', 5.131)
     vk.get_photo()
-    YaDisk = YaDisk('vvv')
-    YaDisk.post_photo()
+    yadisk_api = YaDisk('86l7aAw')
+    yadisk_api.post_photo('photos')
+
 
